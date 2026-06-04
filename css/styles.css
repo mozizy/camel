@@ -1,0 +1,238 @@
+:root {
+    --white: #fff;
+    --dark-brown: #5C4033;
+    --brown: #8B5E3C;
+    --light-brown: #C19A6B;
+    --beige: #D8C3A5;
+}
+
+body {
+    background-color: var(--white);
+    font-family: sans-serif;
+    position: relative;
+}
+
+footer {
+    font-size: 12px;
+    font-weight: bold;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    color: #f58c0cb9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar {
+    background-color: var(--light-brown);
+}
+
+@media screen and (max-width:992px) {
+    .navbar .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar .container .navbar-brand {
+        align-self: center;
+    }
+
+    .navbar .container ul {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+
+    footer {
+        display: none;
+    }
+}
+
+
+
+
+.navbar .navbar-brand {
+    background-image: url("../image/gdj-camel-7411211_640.png");
+    width: 60px;
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.navbar .navbar-toggler {
+    border: none;
+}
+
+.navbar .navbar-toggler:active,
+.navbar .navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+nav #mood .icon {
+    cursor: pointer;
+}
+
+.icon {
+    color: rgb(0, 0, 0);
+}
+
+#mood {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.home {
+    height: calc(100vh - 120px);
+}
+
+.home .image {
+    width: fit-content;
+}
+
+.home img {
+    width: 300px;
+}
+
+.home .texts h1 {
+    min-width: fit-content;
+    word-spacing: 3px
+}
+
+
+.home .texts h1 span {
+    color: var(--dark-brown);
+}
+
+aside .texts {
+    line-height: 30px;
+    width: fit-content;
+}
+
+.texts h1 {
+    color: var(--dark-brown);
+    padding: 20px;
+    background-color: var(--beige);
+}
+
+.texts p {
+    background-color: beige;
+    padding: 20px;
+}
+
+/* Start about */
+.about-body {
+    background-color: var(--white)
+}
+
+.about h2 {
+    color: var(--brown);
+}
+
+.about .about-text {
+    color: white;
+    background-color: var(--white);
+
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+/* end about */
+/* Start hobbies */
+.hobbies .container {
+    height: calc(100vh - 140px);
+}
+
+
+.text-hobbies .heading h2 {
+    color: var(--white);
+    background-color: var(--brown);
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.text-hobbies .heading h5 {
+    background-color: #f58c0c;
+    color: #fff;
+    padding: 10px;
+}
+
+.text-hobbies ul {
+    color: #f58c0c;
+    border: 1px solid;
+    padding: 10px;
+}
+
+/* End hobbies */
+/* Start Contact */
+.content-body {
+    background-color: var(--white);
+}
+
+.content-body .boxs {
+    width: fit-content;
+}
+
+.boxs .box {
+    background-color: #b3b0103a;
+    margin-left: 15px;
+    border: 2px dotted;
+    width: 400px;
+    padding: 10px;
+}
+
+.box ul li a {
+    color: #f58c0c;
+    text-decoration: none;
+}
+
+.box ul li a:hover {
+    opacity: 0.4;
+}
+
+.content-body .thank {
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #f58c0c;
+
+}
+
+/* End Contact */
+
+
+
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.815) !important;
+    color: white;
+}
+
+.dark .list-group-item {
+    background: #222;
+    color: #eee;
+}
+
+.dark nav {
+    background-color: #8a8686;
+}
+
+.dark nav a {
+    color: rgba(255, 255, 255, 0.897);
+}
+
+.dark nav .icon {
+    color: white;
+}
+
+.dark aside .texts p {
+    background-color: var(--brown);
+}
+
+.dark .box {
+    background-color: #5c5c5c;
+}
